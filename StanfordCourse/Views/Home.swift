@@ -13,7 +13,6 @@ struct Home: View {
         }
         .padding()
         .foregroundColor(.orange)
-        .font(.largeTitle)
     }
 }
 
@@ -27,14 +26,17 @@ struct CardView: View {
     var card: GameModel<GameType>.CardType
     
     var body: some View {
-        ZStack {
-            if card.isFaceUp {
-                RoundedRectangle(cornerRadius: 10).fill(Color.white)
-                RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 3)
-                Text(card.content)
-            } else  {
-                RoundedRectangle(cornerRadius: 10).fill()
+        GeometryReader { geometry in
+            ZStack {
+                if card.isFaceUp {
+                    RoundedRectangle(cornerRadius: 10).fill(Color.white)
+                    RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 3)
+                    Text(card.content)
+                } else  {
+                    RoundedRectangle(cornerRadius: 10).fill()
+                }
             }
+            .font(.system(size: min(geometry.size.width, geometry.size.height) * 0.70))
         }
     }
 }

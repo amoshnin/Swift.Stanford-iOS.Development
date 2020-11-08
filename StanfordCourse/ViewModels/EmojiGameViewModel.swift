@@ -9,7 +9,7 @@ class EmojiGameViewModel: ObservableObject {
         let emojis: Array<GameType> = ["🥶", "😳", "😳" , "🥶"]
         return GameModel<GameType>(numberOfPairsOfCards: emojis.count, cardContentFactory: {index in emojis[index]})
     }
-    
+     
     // MARK: - Access to the Model Data
     var cards: Array<GameModel<GameType>.CardType> { model.cards }
     
@@ -18,5 +18,3 @@ class EmojiGameViewModel: ObservableObject {
         model.choose(card: card)
     }
 }
-
-
