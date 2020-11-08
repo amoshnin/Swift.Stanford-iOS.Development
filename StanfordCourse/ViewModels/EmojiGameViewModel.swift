@@ -6,7 +6,7 @@ class EmojiGameViewModel: ObservableObject {
     
     // MARK: - Data setter, redirected to the Model init() (eg: API call)
     static func createGame() -> GameModel<GameType> {
-        let emojis: Array<GameType> = ["🥶", "😳", "😳" , "🥶"]
+        let emojis: Array<GameType> = ["🥶", "😳", "😳"]
         return GameModel<GameType>(numberOfPairsOfCards: emojis.count, cardContentFactory: {index in emojis[index]})
     }
      

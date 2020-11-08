@@ -5,14 +5,22 @@ struct Home: View {
     @ObservedObject var ViewModel: EmojiGameViewModel
     
     var body: some View {
-        HStack {
-            ForEach(ViewModel.cards) { item in
-                CardView(card: item)
-                    .onTapGesture(perform: { ViewModel.chooseIntent(card: item) })
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            LazyVGrid (columns: Array(repeating: .init(.flexible()), count: 2), spacing: 16 ) {
+                ForEach(ViewModel.cards) { item in
+                    CardView(card: item)
+                        .frame(height: 200)
+                        .onTapGesture(perform: { ViewModel.chooseIntent(card: item) })
+                }
             }
+            .padding(.horizontal, 24)
+            
         }
-        .padding()
         .foregroundColor(.orange)
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
 
@@ -38,6 +46,8 @@ struct CardView: View {
             }
             .font(.system(size: fontSize(size: geometry.size) ))
         }
+        
+        
     }
     
     // MARK: - Drawing Constants (Styling)
