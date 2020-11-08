@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct Home: View {
+    // MARK: - Observing the model store
     @ObservedObject var ViewModel: EmojiGameViewModel
     
     var body: some View {
