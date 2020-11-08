@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC46B8B22558737000FEF6D3 /* StanfordCourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8B12558737000FEF6D3 /* StanfordCourseApp.swift */; };
-		AC46B8B42558737000FEF6D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8B32558737000FEF6D3 /* ContentView.swift */; };
+		AC46B8B22558737000FEF6D3 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8B12558737000FEF6D3 /* Index.swift */; };
+		AC46B8B42558737000FEF6D3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8B32558737000FEF6D3 /* Home.swift */; };
 		AC46B8B62558737200FEF6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC46B8B52558737200FEF6D3 /* Assets.xcassets */; };
 		AC46B8B92558737200FEF6D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC46B8B82558737200FEF6D3 /* Preview Assets.xcassets */; };
+		AC46B8C225587D8300FEF6D3 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8C125587D8300FEF6D3 /* GameModel.swift */; };
+		AC46B8C625587F1600FEF6D3 /* EmojiGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8C525587F1600FEF6D3 /* EmojiGameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC46B8AE2558737000FEF6D3 /* StanfordCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanfordCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC46B8B12558737000FEF6D3 /* StanfordCourseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordCourseApp.swift; sourceTree = "<group>"; };
-		AC46B8B32558737000FEF6D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC46B8B12558737000FEF6D3 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		AC46B8B32558737000FEF6D3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		AC46B8B52558737200FEF6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC46B8B82558737200FEF6D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC46B8BA2558737200FEF6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC46B8C125587D8300FEF6D3 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		AC46B8C525587F1600FEF6D3 /* EmojiGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,10 @@
 		AC46B8B02558737000FEF6D3 /* StanfordCourse */ = {
 			isa = PBXGroup;
 			children = (
-				AC46B8B12558737000FEF6D3 /* StanfordCourseApp.swift */,
-				AC46B8B32558737000FEF6D3 /* ContentView.swift */,
+				AC46B8B12558737000FEF6D3 /* Index.swift */,
+				AC46B8C825587F1F00FEF6D3 /* Models */,
+				AC46B8CA25587F2500FEF6D3 /* ViewModels */,
+				AC46B8CC25587F2A00FEF6D3 /* Views */,
 				AC46B8B52558737200FEF6D3 /* Assets.xcassets */,
 				AC46B8BA2558737200FEF6D3 /* Info.plist */,
 				AC46B8B72558737200FEF6D3 /* Preview Content */,
@@ -67,6 +73,30 @@
 				AC46B8B82558737200FEF6D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC46B8C825587F1F00FEF6D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC46B8C125587D8300FEF6D3 /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC46B8CA25587F2500FEF6D3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AC46B8C525587F1600FEF6D3 /* EmojiGameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AC46B8CC25587F2A00FEF6D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC46B8B32558737000FEF6D3 /* Home.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC46B8B42558737000FEF6D3 /* ContentView.swift in Sources */,
-				AC46B8B22558737000FEF6D3 /* StanfordCourseApp.swift in Sources */,
+				AC46B8B42558737000FEF6D3 /* Home.swift in Sources */,
+				AC46B8C625587F1600FEF6D3 /* EmojiGameViewModel.swift in Sources */,
+				AC46B8B22558737000FEF6D3 /* Index.swift in Sources */,
+				AC46B8C225587D8300FEF6D3 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
