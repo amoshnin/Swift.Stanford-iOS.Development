@@ -5,20 +5,14 @@ struct Home: View {
     @ObservedObject var ViewModel: EmojiGameViewModel
     
     var body: some View {
-        Grid(ViewModel.cards) { item in
-            CardView(card: item)
+        Grid(ViewModel.cards) { card in
+            CardView(card: card)
                 .padding(5)
-                .onTapGesture(perform: { ViewModel.chooseIntent(card: item) })
+                .onTapGesture(perform: { ViewModel.chooseIntent(card: card) })
         }
         
         .padding()
         .foregroundColor(.orange)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        Home(ViewModel: EmojiGameViewModel())
     }
 }
 
@@ -31,9 +25,14 @@ struct CardView: View {
                 if card.isFaceUp {
                     RoundedRectangle(cornerRadius: CORNER_RADIUS).fill(Color.white)
                     RoundedRectangle(cornerRadius: CORNER_RADIUS).stroke(lineWidth: STROKE_LINE_WIDTH)
+                    Pie(startAngle: .degrees(0-90), endAngle: .degrees(110-90))
+                        .padding(9)
+                        .opacity(0.4)
                     Text(card.content)
                 } else  {
-                    RoundedRectangle(cornerRadius: CORNER_RADIUS).fill()
+                    if !card.isMatched {
+                        RoundedRectangle(cornerRadius: CORNER_RADIUS).fill()
+                    }
                 }
             }
             .font(.system(size: fontSize(size: geometry.size) ))
@@ -41,11 +40,17 @@ struct CardView: View {
     }
     
     // MARK: - Drawing Constants (Styling)
-    let CORNER_RADIUS: CGFloat = 10
-    let STROKE_LINE_WIDTH: CGFloat = 3
+    private let CORNER_RADIUS: CGFloat = 10
+    private let STROKE_LINE_WIDTH: CGFloat = 3
     
-    func fontSize(size: CGSize) -> CGFloat {
+    private func fontSize(size: CGSize) -> CGFloat {
         min(size.width, size.height) * 0.70
     }
 }
 
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Home(ViewModel: EmojiGameViewModel())
+    }
+}
