@@ -9,13 +9,12 @@ struct Home: View {
             Grid(ViewModel.cards) { card in
                 CardView(card: card)
                     .padding(5)
-                    .onTapGesture(perform: { ViewModel.chooseCardReducer(card: card) })
+                    .onTapGesture(perform: { withAnimation(.spring()) { ViewModel.chooseCardReducer(card: card) }})
             }
-            
             .padding()
             .foregroundColor(.orange)
             
-            Button(action: {ViewModel.resetGameReducer()}, label: { Text("Reset game")})
+            Button(action: {withAnimation(.easeInOut(duration:2)){ViewModel.resetGameReducer()}}, label: { Text("Reset game")})
         }
     }
 }
@@ -37,6 +36,7 @@ struct CardView: View {
                         .animation(card.isMatched ? Animation.spring().repeatForever(autoreverses: false) : .default)
                 }
                 .modifier(Cardify(isFaceUp: card.isFaceUp))
+                .transition(.scale)
             }
         }
     }
