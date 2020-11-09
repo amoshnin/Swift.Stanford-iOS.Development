@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC46B8AE2558737000FEF6D3 /* StanfordCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanfordCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC46B8AE2558737000FEF6D3 /* Memorise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC46B8B12558737000FEF6D3 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		AC46B8B32558737000FEF6D3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		AC46B8B52558737200FEF6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		AC46B8A52558737000FEF6D3 = {
 			isa = PBXGroup;
 			children = (
-				AC46B8B02558737000FEF6D3 /* StanfordCourse */,
+				AC46B8B02558737000FEF6D3 /* Memorise */,
 				AC46B8AF2558737000FEF6D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		AC46B8AF2558737000FEF6D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC46B8AE2558737000FEF6D3 /* StanfordCourse.app */,
+				AC46B8AE2558737000FEF6D3 /* Memorise.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC46B8B02558737000FEF6D3 /* StanfordCourse */ = {
+		AC46B8B02558737000FEF6D3 /* Memorise */ = {
 			isa = PBXGroup;
 			children = (
 				AC46B8B12558737000FEF6D3 /* Index.swift */,
@@ -75,7 +75,7 @@
 				AC46B8BA2558737200FEF6D3 /* Info.plist */,
 				AC46B8B72558737200FEF6D3 /* Preview Content */,
 			);
-			path = StanfordCourse;
+			path = Memorise;
 			sourceTree = "<group>";
 		};
 		AC46B8B72558737200FEF6D3 /* Preview Content */ = {
@@ -157,9 +157,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC46B8AD2558737000FEF6D3 /* StanfordCourse */ = {
+		AC46B8AD2558737000FEF6D3 /* Memorise */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC46B8BD2558737200FEF6D3 /* Build configuration list for PBXNativeTarget "StanfordCourse" */;
+			buildConfigurationList = AC46B8BD2558737200FEF6D3 /* Build configuration list for PBXNativeTarget "Memorise" */;
 			buildPhases = (
 				AC46B8AA2558737000FEF6D3 /* Sources */,
 				AC46B8AB2558737000FEF6D3 /* Frameworks */,
@@ -169,9 +169,9 @@
 			);
 			dependencies = (
 			);
-			name = StanfordCourse;
+			name = Memorise;
 			productName = StanfordCourse;
-			productReference = AC46B8AE2558737000FEF6D3 /* StanfordCourse.app */;
+			productReference = AC46B8AE2558737000FEF6D3 /* Memorise.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -188,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC46B8A92558737000FEF6D3 /* Build configuration list for PBXProject "StanfordCourse" */;
+			buildConfigurationList = AC46B8A92558737000FEF6D3 /* Build configuration list for PBXProject "Memorise" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -201,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC46B8AD2558737000FEF6D3 /* StanfordCourse */,
+				AC46B8AD2558737000FEF6D3 /* Memorise */,
 			);
 		};
 /* End PBXProject section */
@@ -360,16 +360,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"StanfordCourse/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Memorise/Preview Content\"";
 				DEVELOPMENT_TEAM = BXSCJ2TSZH;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = StanfordCourse/Info.plist;
+				INFOPLIST_FILE = Memorise/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.artem.StanfordCourse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artem.Memorise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,16 +382,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"StanfordCourse/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Memorise/Preview Content\"";
 				DEVELOPMENT_TEAM = BXSCJ2TSZH;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = StanfordCourse/Info.plist;
+				INFOPLIST_FILE = Memorise/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.artem.StanfordCourse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artem.Memorise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,7 +401,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC46B8A92558737000FEF6D3 /* Build configuration list for PBXProject "StanfordCourse" */ = {
+		AC46B8A92558737000FEF6D3 /* Build configuration list for PBXProject "Memorise" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC46B8BB2558737200FEF6D3 /* Debug */,
@@ -410,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC46B8BD2558737200FEF6D3 /* Build configuration list for PBXNativeTarget "StanfordCourse" */ = {
+		AC46B8BD2558737200FEF6D3 /* Build configuration list for PBXNativeTarget "Memorise" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC46B8BE2558737200FEF6D3 /* Debug */,

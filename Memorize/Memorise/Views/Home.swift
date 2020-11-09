@@ -24,8 +24,6 @@ struct CardView: View {
     @State private var bonusRemaining: Double = 0
     var card: GameModel<GameType>.CardType
     
-    
-    
     var body: some View {
         GeometryReader { geometry in
             if card.isFaceUp || !card.isMatched {
