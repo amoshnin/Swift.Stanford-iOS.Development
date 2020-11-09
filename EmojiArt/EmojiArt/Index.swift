@@ -4,7 +4,7 @@ import SwiftUI
 struct Index: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home(document: DocumentViewModel())
         }
     }
 }
