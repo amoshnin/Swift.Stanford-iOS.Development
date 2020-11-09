@@ -17,6 +17,7 @@ struct GameModel<CardContent> where CardContent: Equatable {
             cards.append(CardType(content: content ))
             cards.append(CardType(content: content ))
         }
+        cards.shuffle()
     }
     
     // MARK: - Model functions

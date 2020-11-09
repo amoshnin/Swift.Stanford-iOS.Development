@@ -14,7 +14,11 @@ class EmojiGameViewModel: ObservableObject {
     var cards: Array<GameModel<GameType>.CardType> { model.cards }
     
     // MARK: - Intent(s) (redirected to Model functions)
-    func chooseIntent(card: GameModel<GameType>.CardType) {
+    func chooseCardReducer(card: GameModel<GameType>.CardType) {
         model.choose(card: card)
+    }
+    
+    func resetGameReducer() {
+        model = EmojiGameViewModel.createGame()
     }
 }

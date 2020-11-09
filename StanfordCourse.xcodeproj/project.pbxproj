@@ -17,6 +17,7 @@
 		AC7EAE6E25591ABF0026AC9E /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EAE6D25591ABF0026AC9E /* GridLayout.swift */; };
 		AC7EAE722559358F0026AC9E /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EAE712559358F0026AC9E /* Array+Only.swift */; };
 		AC7EAE7925593EA20026AC9E /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EAE7825593EA20026AC9E /* Pie.swift */; };
+		AC7EAE80255946C90026AC9E /* CardifyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EAE7F255946C90026AC9E /* CardifyModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AC7EAE6D25591ABF0026AC9E /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		AC7EAE712559358F0026AC9E /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
 		AC7EAE7825593EA20026AC9E /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		AC7EAE7F255946C90026AC9E /* CardifyModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardifyModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		AC46B8CC25587F2A00FEF6D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC7EAE7E255946B60026AC9E /* Modifiers */,
 				AC46B8D62558B11D00FEF6D3 /* LayoutComponents */,
 				AC46B8B32558737000FEF6D3 /* Home.swift */,
 			);
@@ -141,6 +144,14 @@
 				AC7EAE7825593EA20026AC9E /* Pie.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		AC7EAE7E255946B60026AC9E /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EAE7F255946C90026AC9E /* CardifyModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +231,7 @@
 				AC7EAE6E25591ABF0026AC9E /* GridLayout.swift in Sources */,
 				AC46B8D82558B19A00FEF6D3 /* Grid.swift in Sources */,
 				AC46B8C225587D8300FEF6D3 /* GameModel.swift in Sources */,
+				AC7EAE80255946C90026AC9E /* CardifyModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
