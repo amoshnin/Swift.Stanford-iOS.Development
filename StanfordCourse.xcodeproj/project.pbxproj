@@ -14,6 +14,7 @@
 		AC46B8C225587D8300FEF6D3 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8C125587D8300FEF6D3 /* GameModel.swift */; };
 		AC46B8C625587F1600FEF6D3 /* EmojiGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8C525587F1600FEF6D3 /* EmojiGameViewModel.swift */; };
 		AC46B8D82558B19A00FEF6D3 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8D72558B19A00FEF6D3 /* Grid.swift */; };
+		AC7EAE6E25591ABF0026AC9E /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EAE6D25591ABF0026AC9E /* GridLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AC46B8C125587D8300FEF6D3 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		AC46B8C525587F1600FEF6D3 /* EmojiGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGameViewModel.swift; sourceTree = "<group>"; };
 		AC46B8D72558B19A00FEF6D3 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		AC7EAE6D25591ABF0026AC9E /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				AC46B8D72558B19A00FEF6D3 /* Grid.swift */,
+				AC7EAE6D25591ABF0026AC9E /* GridLayout.swift */,
 			);
 			path = LayoutComponents;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				AC46B8B42558737000FEF6D3 /* Home.swift in Sources */,
 				AC46B8C625587F1600FEF6D3 /* EmojiGameViewModel.swift in Sources */,
 				AC46B8B22558737000FEF6D3 /* Index.swift in Sources */,
+				AC7EAE6E25591ABF0026AC9E /* GridLayout.swift in Sources */,
 				AC46B8D82558B19A00FEF6D3 /* Grid.swift in Sources */,
 				AC46B8C225587D8300FEF6D3 /* GameModel.swift in Sources */,
 			);

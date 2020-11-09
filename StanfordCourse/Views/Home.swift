@@ -7,6 +7,7 @@ struct Home: View {
     var body: some View {
         Grid(ViewModel.cards) { item in
             CardView(card: item)
+                .padding(5)
                 .onTapGesture(perform: { ViewModel.chooseIntent(card: item) })
         }
         
