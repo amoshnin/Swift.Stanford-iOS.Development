@@ -9,6 +9,7 @@ struct GameModel<CardContent> where CardContent: Equatable {
         set { for index in cards.indices { cards[index].isFaceUp = index == newValue } }
     }
     
+    
     // MARK: - Model data setter
     init(numberOfPairsOfCards: Int, cardContentFactory: (Int) -> CardContent) {
         cards = Array<CardType>()
