@@ -16,6 +16,12 @@ struct Home: View {
     @GestureState private var GesturePanOffset: CGSize = .zero
     private var panOffset: CGSize { (SteadyPanOffset + GesturePanOffset) * zoomScale }
     
+    
+    init(document: DocumentViewModel) {
+        self.document = document
+        _ChosenPalette = State(wrappedValue: self.document.defaultPalette)
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -30,8 +36,6 @@ struct Home: View {
                     }
                 }
                 .padding(.horizontal)
-                .onAppear { ChosenPalette = document.defaultPalette }
-
             }
             
             GeometryReader { geometry in

@@ -87,8 +87,8 @@
 		AC0DE66225599F0C0079E018 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC7E9089255AC52C003CF39E /* Components */,
 				AC0DE64D25599AD20079E018 /* HomeView.swift */,
-				AC7E907E255ABBB9003CF39E /* PaletteChooser.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 		AC0DE66425599F360079E018 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				AC7E9082255ABD4A003CF39E /* Extension.swift */,
+				AC7E9087255AC353003CF39E /* Extensions */,
 				AC0DE66525599F4C0079E018 /* DocumentViewModel.swift */,
 			);
 			path = ViewModels;
@@ -117,6 +117,22 @@
 				AC7E9077255AB1EB003CF39E /* ViewModifiers.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC7E9087255AC353003CF39E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC7E9082255ABD4A003CF39E /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC7E9089255AC52C003CF39E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AC7E907E255ABBB9003CF39E /* PaletteChooser.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
