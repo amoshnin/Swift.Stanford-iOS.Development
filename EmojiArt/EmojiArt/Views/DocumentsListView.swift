@@ -13,12 +13,18 @@ struct DocumentsListView: View {
                         Text(store.name(for: document))
                     })
                 }
+                .onDelete { indexSet in
+                    indexSet.map { store.documents[$0] }.forEach { document in
+                        store.removeDocument(document)
+                    }
+                }
             }
+            .listStyle(InsetGroupedListStyle())
             .navigationBarTitle(store.name)
             .navigationBarItems(leading: Button(action: {store.addDocument()}, label: {
                 Image(systemName: "plus")
                     .imageScale(.large)
-            }))
+            }), trailing: EditButton())
         }
     }
 }
