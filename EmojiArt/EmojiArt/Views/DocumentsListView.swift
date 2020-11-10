@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DocumentsListView: View {
     @EnvironmentObject var store: StoreViewModel
+    @State private var editMode: EditMode = .inactive
     
     var body: some View {
         NavigationView {
@@ -9,9 +10,7 @@ struct DocumentsListView: View {
                 ForEach(store.documents) { document in
                   NavigationLink(
                     destination: DocumentView(document: document).navigationBarTitle(store.name(for: document)),
-                    label: {
-                        Text(store.name(for: document))
-                    })
+                    label: {EditableText(store.name(for: document), isEditing: editMode.isEditing) { (text) in store.setName(text, for: document)}})
                 }
                 .onDelete { indexSet in
                     indexSet.map { store.documents[$0] }.forEach { document in
@@ -25,6 +24,7 @@ struct DocumentsListView: View {
                 Image(systemName: "plus")
                     .imageScale(.large)
             }), trailing: EditButton())
+            .environment(\.editMode, $editMode)
         }
     }
 }
