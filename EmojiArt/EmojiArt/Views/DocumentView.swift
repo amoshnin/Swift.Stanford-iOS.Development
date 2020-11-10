@@ -1,20 +1,22 @@
 import SwiftUI
 
-struct Home: View {
+struct DocumentView: View {
     // MARK: - Observing View Model
     @ObservedObject var document: DocumentViewModel
     @State var ChosenPalette: String = ""
+    @State var alertVisible = false
+    @State var confirmBackgroundAlertVisible = false
+    
     var isLoading: Bool {   document.backgroundURL != nil && document.backgroundImage == nil   }
     
+    
     // MARK: - Zooming in States
-    @State private var SteadyZoomScale: CGFloat = 1
     @GestureState private var GestureZoomScale: CGFloat = 1
-    private var zoomScale: CGFloat { SteadyZoomScale * GestureZoomScale }
+    private var zoomScale: CGFloat { document.SteadyZoomScale * GestureZoomScale }
     
     // MARK: - Pan offset States
-    @State private var SteadyPanOffset: CGSize = .zero
     @GestureState private var GesturePanOffset: CGSize = .zero
-    private var panOffset: CGSize { (SteadyPanOffset + GesturePanOffset) * zoomScale }
+    private var panOffset: CGSize { (document.SteadyPanOffset + GesturePanOffset) * zoomScale }
     
     
     init(document: DocumentViewModel) {
@@ -22,6 +24,7 @@ struct Home: View {
         _ChosenPalette = State(wrappedValue: self.document.defaultPalette)
     }
     
+ 
     var body: some View {
         VStack {
             HStack {
@@ -77,6 +80,31 @@ struct Home: View {
                 }
             }
         }
+        .alert(isPresented: $confirmBackgroundAlertVisible, content: {
+                Alert(
+                    title: Text("Paste background"),
+                    message: Text("Replace your background with \(UIPasteboard.general.url?.absoluteString ?? "Nothing")?"),
+                    primaryButton: .default(Text("OK")) { document.backgroundURL = UIPasteboard.general.url},
+                    secondaryButton: .cancel()
+                )}
+        )
+        
+   
+
+        .navigationBarItems(trailing: Button(action: {
+            if let url = UIPasteboard.general.url, url != document.backgroundURL {
+                confirmBackgroundAlertVisible = true
+            } else {alertVisible = true}
+        }, label: {
+            Image(systemName: "doc.on.clipboard")
+                .alert(isPresented: $alertVisible, content: {
+                        Alert(
+                            title: Text("Paste background"),
+                              message: Text("Copy the URL of an image to the clipboard and touch this button to make it the background of our document"),
+                            dismissButton: .default(Text("OK"))
+                        )}
+                )
+        }))
     }
     
     private func ZoomGesture() -> some Gesture {
@@ -85,7 +113,7 @@ struct Home: View {
                 GestureZoomScale = latestGestureValue
             })
             .onEnded { finalGestureValue in
-                SteadyZoomScale *= finalGestureValue
+                document.SteadyZoomScale *= finalGestureValue
             }
     }
     
@@ -95,7 +123,7 @@ struct Home: View {
                 GesturePanOffset = latestGestureValue.translation / zoomScale
             }
             .onEnded { finalGestureValue in
-                SteadyPanOffset = SteadyPanOffset + (finalGestureValue.translation / zoomScale)
+                document.SteadyPanOffset = document.SteadyPanOffset + (finalGestureValue.translation / zoomScale)
             }
     }
     
@@ -107,11 +135,11 @@ struct Home: View {
     }
     
     private func zoomToFit(image: UIImage?, size: CGSize) {
-        if let image = image, image.size.width > 0, image.size.height > 0 {
+        if let image = image, image.size.width > 0, image.size.height > 0, size.height > 0, size.width > 0 {
             let HZoom = size.width / image.size.width
             let VZoom = size.height / image.size.height
-            SteadyPanOffset = .zero
-            SteadyZoomScale = min(HZoom, VZoom)
+            document.SteadyPanOffset = .zero
+            document.SteadyZoomScale = min(HZoom, VZoom)
         }
     }
     
@@ -148,6 +176,6 @@ struct OptionalImage: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home(document: DocumentViewModel())
+        DocumentView(document: DocumentViewModel())
     }
 }

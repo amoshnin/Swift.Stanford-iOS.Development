@@ -1,20 +1,31 @@
 import SwiftUI
 import Combine
 
-class DocumentViewModel: ObservableObject {
+class DocumentViewModel: ObservableObject, Hashable, Identifiable {
+    static func == (lhs: DocumentViewModel, rhs: DocumentViewModel) -> Bool { lhs.id == rhs.id }
+    
+    let id: UUID
+    func hash(into hasher: inout Hasher){ hasher.combine(id) }
+    
     static let palette: String = "😀 😃 😄 😁 😆 😅 😂 🤣 ☺️ 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛 😝 😜 🤪 🤨 🧐 🤓 😎 🤩 🥳 😏 😒 😞 😔 😟 😕 🙁 ☹️ 😣 😖 😫 😩 🥺 😢 😭 😤 😠 😡 🤬 🤯 😳 🥵"
     
     private static let FileTitle = "EmojiDocument.Untitled"
     @Published private var EmojiDocModel: DocumentModel
     @Published private(set) var backgroundImage: UIImage?
+    
+    @Published var SteadyZoomScale: CGFloat = 1
+    @Published var SteadyPanOffset: CGSize = .zero
+    
     var emojis: [DocumentModel.EmojiType] {EmojiDocModel.emojis}
  
     private var autoSaveCancellable: AnyCancellable?
-    init() {
-        EmojiDocModel = DocumentModel(json: UserDefaults.standard.data(forKey: DocumentViewModel.FileTitle)) ?? DocumentModel()
+    init(id: UUID = UUID()) {
+        self.id = id
+        let defaultsKey = "Document.\(self.id.uuidString)"
+        EmojiDocModel = DocumentModel(json: UserDefaults.standard.data(forKey: defaultsKey)) ?? DocumentModel()
         autoSaveCancellable = $EmojiDocModel.sink { EmojiDocModel in
             print("json = \(EmojiDocModel.json?.utf8 ?? "nil")")
-            UserDefaults.standard.set(EmojiDocModel.json, forKey: DocumentViewModel.FileTitle)
+            UserDefaults.standard.set(EmojiDocModel.json, forKey: defaultsKey)
         }
         fetchImageData()
     }
