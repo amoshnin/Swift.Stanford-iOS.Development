@@ -1,20 +1,21 @@
 import SwiftUI
+import Combine
 
 class DocumentViewModel: ObservableObject {
     static let palette: String = "😀 😃 😄 😁 😆 😅 😂 🤣 ☺️ 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛 😝 😜 🤪 🤨 🧐 🤓 😎 🤩 🥳 😏 😒 😞 😔 😟 😕 🙁 ☹️ 😣 😖 😫 😩 🥺 😢 😭 😤 😠 😡 🤬 🤯 😳 🥵"
     
     private static let FileTitle = "EmojiDocument.Untitled"
-    @Published private var EmojiDocModel: DocumentModel = DocumentModel() {
-        didSet {
-            print("json = \(EmojiDocModel.json?.utf8 ?? "nil")")
-            UserDefaults.standard.set(EmojiDocModel.json, forKey: DocumentViewModel.FileTitle)
-        }
-    }
+    @Published private var EmojiDocModel: DocumentModel
     @Published private(set) var backgroundImage: UIImage?
     var emojis: [DocumentModel.EmojiType] {EmojiDocModel.emojis}
     
+    private var autoSaveCancellable: AnyCancellable?
     init() {
         EmojiDocModel = DocumentModel(json: UserDefaults.standard.data(forKey: DocumentViewModel.FileTitle)) ?? DocumentModel()
+        autoSaveCancellable = $EmojiDocModel.sink { EmojiDocModel in
+            print("json = \(EmojiDocModel.json?.utf8 ?? "nil")")
+            UserDefaults.standard.set(EmojiDocModel.json, forKey: DocumentViewModel.FileTitle)
+        }
         fetchImageData()
     }
     
@@ -45,19 +46,18 @@ class DocumentViewModel: ObservableObject {
         }
     }
     
+    private var fetchImageCancellable: AnyCancellable?
     private func fetchImageData() {
         backgroundImage = nil
         if let url = EmojiDocModel.backgroundURL {
-            DispatchQueue.global(qos: .userInitiated).async {
-                if let imageData = try? Data(contentsOf: url) {
-                    DispatchQueue.main.async {
-                        if url == self.EmojiDocModel.backgroundURL {
-                            self.backgroundImage = UIImage(data: imageData)
-                        }
-                    }
-                }
-            }
+            fetchImageCancellable?.cancel()
+            let session = URLSession.shared
+            let publisher = session.dataTaskPublisher(for: url)
+                .map{data, URLResponse in UIImage(data: data)}
+                .receive(on: DispatchQueue.main)
+                .replaceError(with: nil)
             
+            fetchImageCancellable = publisher.assign(to: \.backgroundImage, on: self)
         }
     }
 }
