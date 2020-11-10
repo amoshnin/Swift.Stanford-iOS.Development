@@ -7,8 +7,6 @@ class DocumentViewModel: ObservableObject, Hashable, Identifiable {
     let id: UUID
     func hash(into hasher: inout Hasher){ hasher.combine(id) }
     
-    static let palette: String = "😀 😃 😄 😁 😆 😅 😂 🤣 ☺️ 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛 😝 😜 🤪 🤨 🧐 🤓 😎 🤩 🥳 😏 😒 😞 😔 😟 😕 🙁 ☹️ 😣 😖 😫 😩 🥺 😢 😭 😤 😠 😡 🤬 🤯 😳 🥵"
-    
     private static let FileTitle = "EmojiDocument.Untitled"
     @Published private var EmojiDocModel: DocumentModel
     @Published private(set) var backgroundImage: UIImage?
