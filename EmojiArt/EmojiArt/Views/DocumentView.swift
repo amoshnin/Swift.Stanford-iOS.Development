@@ -2,7 +2,7 @@ import SwiftUI
 
 struct DocumentView: View {
     // MARK: - Observing View Model
-    @ObservedObject var document: DocumentViewModel
+    @StateObject var document: DocumentViewModel
     @State var ChosenPalette: String = ""
     @State var alertVisible = false
     @State var confirmBackgroundAlertVisible = false
@@ -20,7 +20,7 @@ struct DocumentView: View {
     
     
     init(document: DocumentViewModel) {
-        self.document = document
+        self._document = StateObject(wrappedValue: document)
         _ChosenPalette = State(wrappedValue: self.document.defaultPalette)
     }
     

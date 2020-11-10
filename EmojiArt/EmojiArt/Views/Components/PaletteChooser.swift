@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PaletteChooser: View {
-    @ObservedObject var document: DocumentViewModel
+    @StateObject var document: DocumentViewModel
     @Binding var ChosenPalette: String
     
     @State private var PopupVisible = false
