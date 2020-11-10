@@ -8,7 +8,7 @@ class DocumentViewModel: ObservableObject {
     @Published private var EmojiDocModel: DocumentModel
     @Published private(set) var backgroundImage: UIImage?
     var emojis: [DocumentModel.EmojiType] {EmojiDocModel.emojis}
-    
+ 
     private var autoSaveCancellable: AnyCancellable?
     init() {
         EmojiDocModel = DocumentModel(json: UserDefaults.standard.data(forKey: DocumentViewModel.FileTitle)) ?? DocumentModel()

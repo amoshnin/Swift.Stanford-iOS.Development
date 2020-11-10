@@ -3,6 +3,7 @@ import SwiftUI
 struct Home: View {
     // MARK: - Observing View Model
     @ObservedObject var document: DocumentViewModel
+    @State var ChosenPalette: String = ""
     var isLoading: Bool {   document.backgroundURL != nil && document.backgroundImage == nil   }
     
     // MARK: - Zooming in States
@@ -17,16 +18,21 @@ struct Home: View {
     
     var body: some View {
         VStack {
-            ScrollView (.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(DocumentViewModel.palette.map {String($0)}, id: \.self) { emoji in
-                        Text(emoji)
-                            .font(.system(size: EMOJI_SIZE))
-                            .onDrag { NSItemProvider(object: emoji as NSString) }
+            HStack {
+                PaletteChooser(document: document, ChosenPalette: $ChosenPalette)
+                ScrollView (.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(ChosenPalette.map {String($0)}, id: \.self) { emoji in
+                            Text(emoji)
+                                .font(.system(size: EMOJI_SIZE))
+                                .onDrag { NSItemProvider(object: emoji as NSString) }
+                        }
                     }
                 }
+                .padding(.horizontal)
+                .onAppear { ChosenPalette = document.defaultPalette }
+
             }
-            .padding(.horizontal)
             
             GeometryReader { geometry in
                 ZStack {
