@@ -1,14 +1,6 @@
-//
-//  FilterFlights.swift
-//  Enroute
-//
-//  Created by CS193p Instructor on 5/12/20.
-//  Copyright © 2020 Stanford University. All rights reserved.
-//
-
 import SwiftUI
 
-struct FilterFlights: View {
+struct FilterFlightsView: View {
     @ObservedObject var allAirports = Airports.all
     @ObservedObject var allAirlines = Airlines.all
 
@@ -63,8 +55,4 @@ struct FilterFlights: View {
     }
 }
 
-//struct FilterFlights_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FilterFlights()
-//    }
-//}
+ 

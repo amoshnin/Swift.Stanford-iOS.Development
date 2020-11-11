@@ -1,11 +1,3 @@
-//
-//  FlightsEnrouteView.swift
-//  Enroute
-//
-//  Created by CS193p Instructor.
-//  Copyright © 2020 Stanford University. All rights reserved.
-//
-
 import SwiftUI
 
 struct FlightSearch {
@@ -15,7 +7,7 @@ struct FlightSearch {
     var inTheAir: Bool = true
 }
 
-struct FlightsEnrouteView: View {
+struct FlightsView: View {
     @State var flightSearch: FlightSearch
     
     var body: some View {
@@ -32,7 +24,7 @@ struct FlightsEnrouteView: View {
             self.showFilter = true
         }
         .sheet(isPresented: $showFilter) {
-            FilterFlights(flightSearch: self.$flightSearch, isPresented: self.$showFilter)
+            FilterFlightsView(flightSearch: self.$flightSearch, isPresented: self.$showFilter)
         }
     }
     
@@ -111,6 +103,6 @@ struct FlightListEntry: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FlightsEnrouteView(flightSearch: FlightSearch(destination: "KSFO"))
+        FlightsView(flightSearch: FlightSearch(destination: "KSFO"))
     }
 }
