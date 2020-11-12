@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct FilterFlightsView: View {
+struct FilterFlights: View {
     @ObservedObject var allAirports = Airports.all
     @ObservedObject var allAirlines = Airlines.all
 
@@ -55,4 +55,8 @@ struct FilterFlightsView: View {
     }
 }
 
- 
+//struct FilterFlights_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FilterFlights()
+//    }
+//}

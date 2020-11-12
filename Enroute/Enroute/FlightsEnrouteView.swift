@@ -7,7 +7,7 @@ struct FlightSearch {
     var inTheAir: Bool = true
 }
 
-struct FlightsView: View {
+struct FlightsEnrouteView: View {
     @State var flightSearch: FlightSearch
     
     var body: some View {
@@ -24,7 +24,7 @@ struct FlightsView: View {
             self.showFilter = true
         }
         .sheet(isPresented: $showFilter) {
-            FilterFlightsView(flightSearch: self.$flightSearch, isPresented: self.$showFilter)
+            FilterFlights(flightSearch: self.$flightSearch, isPresented: self.$showFilter)
         }
     }
     
@@ -103,6 +103,6 @@ struct FlightListEntry: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FlightsView(flightSearch: FlightSearch(destination: "KSFO"))
+        FlightsEnrouteView(flightSearch: FlightSearch(destination: "KSFO"))
     }
 }
