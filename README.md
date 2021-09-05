@@ -17,8 +17,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 <summary>Lecture 1: Course Logistics and Intro to SwiftUI
 </summary>
 
-[Video](https://youtu.be/jbtqIBpUG7g)
-
+[Video](https://youtu.be/jbtqIBpUG7g) <br/>
 [Slides](./documents/Slides/l1.pdf)
 
 </details>
