@@ -17,12 +17,15 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 <summary>Lecture 1: Course Logistics and Intro to SwiftUI
 </summary>
 
-[Video](https://youtu.be/jbtqIBpUG7g) <br/>
+[Video](https://youtu.be/jbtqIBpUG7g)
+
 [Slides](./documents/Slides/l1.pdf)
 
 </details>
 
-### Lecture 2: MVVM and the Swift Type System
+<details>
+<summary>Lecture 2: MVVM and the Swift Type System
+</summary>
 
 [Video](https://youtu.be/4GjXq2Sr55Q)
 
@@ -38,7 +41,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 1](./documents/Assignments/a1.pdf)
 
-### Lecture 3: Reactive UI + Protocols + Layout
+</details>
+
+<details>
+<summary>Lecture 3: Reactive UI + Protocols + Layout
+</summary>
 
 [Video](https://youtu.be/SIYdYpPXil4)
 
@@ -49,7 +56,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l3.pdf)
 
-### Lecture 4: Grid + enum + Optionals
+</details>
+
+<details>
+<summary>Lecture 4: Grid + enum + Optionals
+</summary>
 
 [Video](https://youtu.be/eHEeWzFP6O4)
 
@@ -64,7 +75,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 2](./documents/Assignments/a2.pdf)
 
-### Lecture 5: ViewBuilder + Shape + ViewModifier
+</details>
+
+<details>
+<summary>Lecture 5: ViewBuilder + Shape + ViewModifier
+</summary>
 
 [Video](https://www.youtube.com/watch?v=oDKDGCRdSHc)
 
@@ -75,7 +90,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l5.pdf)
 
-### Lecture 6: Animation
+</details>
+
+<details>
+<summary>Lecture 6: Animation
+</summary>
 
 [Video](https://www.youtube.com/watch?v=3krC2c56ceQ)
 
@@ -93,7 +112,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 3](./documents/Assignments/a3.pdf)
 
-### Lecture 7: Multithreading EmojiArt
+</details>
+
+<details>
+<summary>Lecture 7: Multithreading EmojiArt
+</summary>
 
 [Video](https://youtu.be/tmx-OwkBWxA)
 
@@ -104,7 +127,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l7.pdf)
 
-### Lecture 8: Gestures JSON
+</details>
+
+<details>
+<summary>Lecture 8: Gestures JSON
+</summary>
 
 [Video](https://youtu.be/mz-rNLWJ0bk)
 
@@ -121,7 +148,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 5](./documents/Assignments/a5.pdf)
 
-### Lecture 9: Data Flow
+</details>
+
+<details>
+<summary>Lecture 9: Data Flow
+</summary>
 
 [Video](https://youtu.be/0i152oA3T3s)
 
@@ -138,7 +169,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l9.pdf)
 
-### Lecture 10: Modal Presentation and Navigation
+</details>
+
+<details>
+<summary>Lecture 10: Modal Presentation and Navigation
+</summary>
 
 [Video](https://youtu.be/CKexGQuIO7E)
 
@@ -174,7 +209,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 6](./documents/Assignments/a6.pdf)
 
-### Lecture 11: Enroute Picker
+</details>
+
+<details>
+<summary>Lecture 11: Enroute Picker
+</summary>
 
 [Video](https://youtu.be/fCfC6m7XUew)
 
@@ -192,7 +231,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l11.pdf)
 
-### Lecture 12: Core Data
+</details>
+
+<details>
+<summary>Lecture 12: Core Data
+</summary>
 
 [Video](https://youtu.be/yOhyOpXvaec)
 
@@ -228,7 +271,11 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l12.pdf)
 
-### Lecture 13: Persistence
+</details>
+
+<details>
+<summary>Lecture 13: Persistence
+</summary>
 
 [Video](https://youtu.be/fTNPRhGGP-0)
 
@@ -242,11 +289,17 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l13.pdf)
 
-### Lecture 14: UIKit Integration
+</details>
+
+<details>
+<summary>Lecture 14: UIKit Integration
+</summary>
 
 [Video](https://youtu.be/GRX5Dha_Clw)
 
 [Slides](./documents/Slides/l14.pdf)
+
+</details>
 
 ## Course info:
 
