@@ -3,14 +3,10 @@
 My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 ## Projects index
-
- Table of contents
-=================
-
 <!--ts-->
-   * [EmojiArt](./EmojiArt)
-   * [Enroute](./Enroute)
-   * [Memorize](./Memorize)
+   * [EmojiArt](./EmojiArt) => 
+   * [Enroute](./Enroute) => 
+   * [Memorize](./Memorize) => 
 <!--te-->
 
 
