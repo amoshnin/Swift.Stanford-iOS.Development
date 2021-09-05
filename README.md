@@ -6,9 +6,9 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 <!--ts-->
 
-- [EmojiArt](./EmojiArt) =>
-- [Enroute](./Enroute) =>
-- [Memorize](./Memorize) =>
+- [EmojiArt](./EmojiArt) => image editor with emojis
+- [Enroute](./Enroute) => airway flights manager
+- [Memorize](./Memorize) => card-matching game
 <!--te-->
 
 ## Theory index
@@ -303,9 +303,9 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 ## Course info:
 
-- **Name:** # Stanford's CS193p 2021 - Developing Apps for iOS
+- **Name:** Stanford's CS193p 2021 - Developing Apps for iOS
 - **University:** Stanford University
-- **Lecturer**: Paul Hegarty](https://www.quora.com/Who-is-Paul-Hegarty-from-Stanford-CS193)
+- **Lecturer**: [Paul Hegarty](https://www.quora.com/Who-is-Paul-Hegarty-from-Stanford-CS193)
 - **WWW:** https://cs193p.sites.stanford.edu/
 
 ## Supplementary Resources used:
