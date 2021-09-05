@@ -8,10 +8,9 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 =================
 
 <!--ts-->
-   * [EmojiArt](#installation)
-   * [Enroute](#usage)
-   * [Tests](#tests)
-   * [Memorize](#dependency)
+   * [EmojiArt](tree/master/EmojiArt)
+   * [Enroute](/tree/master/Enroute)
+   * [Memorize](/tree/master/Memorize)
 <!--te-->
 
 
