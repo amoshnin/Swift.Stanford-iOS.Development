@@ -11,6 +11,8 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 - [Memorize](./Memorize) =>
 <!--te-->
 
+## Theory index
+
 <details>
 <summary>Full Theory Index (by chapter)</summary>
 
