@@ -18,6 +18,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 </summary>
 
 [Video](https://youtu.be/jbtqIBpUG7g)
+
 [Slides](./documents/Slides/l1.pdf)
 
 </details>
