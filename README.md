@@ -1,4 +1,4 @@
-# CS50 Introduction to AI with Python projects
+# Stanford's CS193p 2021 Course - Developing Apps for iOS - Projects
 
 My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
