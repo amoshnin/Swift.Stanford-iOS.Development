@@ -14,7 +14,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 ## Theory index
 
 <details>
-<summary>Full Theory Index (by chapter)</summary>
+<summary>Full Documentation of Theory (by chapter)</summary>
 
 ## Lecture 1: Course Logistics and Intro to SwiftUI
 
