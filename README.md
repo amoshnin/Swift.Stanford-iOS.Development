@@ -16,13 +16,13 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 <details>
 <summary>Full Documentation of Theory (by chapter)</summary>
 
-## Lecture 1: Course Logistics and Intro to SwiftUI
+### Lecture 1: Course Logistics and Intro to SwiftUI
 
 [Video](https://youtu.be/jbtqIBpUG7g)
 
 [Slides](./documents/Slides/l1.pdf)
 
-## Lecture 2: MVVM and the Swift Type System
+### Lecture 2: MVVM and the Swift Type System
 
 [Video](https://youtu.be/4GjXq2Sr55Q)
 
@@ -38,7 +38,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 1](./documents/Assignments/a1.pdf)
 
-## Lecture 3: Reactive UI + Protocols + Layout
+### Lecture 3: Reactive UI + Protocols + Layout
 
 [Video](https://youtu.be/SIYdYpPXil4)
 
@@ -49,7 +49,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l3.pdf)
 
-## Lecture 4: Grid + enum + Optionals
+### Lecture 4: Grid + enum + Optionals
 
 [Video](https://youtu.be/eHEeWzFP6O4)
 
@@ -64,7 +64,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 2](./documents/Assignments/a2.pdf)
 
-## Lecture 5: ViewBuilder + Shape + ViewModifier
+### Lecture 5: ViewBuilder + Shape + ViewModifier
 
 [Video](https://www.youtube.com/watch?v=oDKDGCRdSHc)
 
@@ -75,7 +75,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l5.pdf)
 
-## Lecture 6: Animation
+### Lecture 6: Animation
 
 [Video](https://www.youtube.com/watch?v=3krC2c56ceQ)
 
@@ -93,7 +93,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 3](./documents/Assignments/a3.pdf)
 
-## Lecture 7: Multithreading EmojiArt
+### Lecture 7: Multithreading EmojiArt
 
 [Video](https://youtu.be/tmx-OwkBWxA)
 
@@ -104,7 +104,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l7.pdf)
 
-## Lecture 8: Gestures JSON
+### Lecture 8: Gestures JSON
 
 [Video](https://youtu.be/mz-rNLWJ0bk)
 
@@ -121,7 +121,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 5](./documents/Assignments/a5.pdf)
 
-## Lecture 9: Data Flow
+### Lecture 9: Data Flow
 
 [Video](https://youtu.be/0i152oA3T3s)
 
@@ -138,7 +138,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l9.pdf)
 
-## Lecture 10: Modal Presentation and Navigation
+### Lecture 10: Modal Presentation and Navigation
 
 [Video](https://youtu.be/CKexGQuIO7E)
 
@@ -174,7 +174,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Assignment 6](./documents/Assignments/a6.pdf)
 
-## Lecture 11: Enroute Picker
+### Lecture 11: Enroute Picker
 
 [Video](https://youtu.be/fCfC6m7XUew)
 
@@ -192,7 +192,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l11.pdf)
 
-## Lecture 12: Core Data
+### Lecture 12: Core Data
 
 [Video](https://youtu.be/yOhyOpXvaec)
 
@@ -228,7 +228,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l12.pdf)
 
-## Lecture 13: Persistence
+### Lecture 13: Persistence
 
 [Video](https://youtu.be/fTNPRhGGP-0)
 
@@ -242,7 +242,7 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
 [Slides](./documents/Slides/l13.pdf)
 
-## Lecture 14: UIKit Integration
+### Lecture 14: UIKit Integration
 
 [Video](https://youtu.be/GRX5Dha_Clw)
 
