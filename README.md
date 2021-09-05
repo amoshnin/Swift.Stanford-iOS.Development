@@ -1,4 +1,4 @@
-# Stanford's CS193p 2021 Course - Developing Apps for iOS
+# Stanford's CS193p 2021 Course - Developing iOS Apps
 
 My assignments for CS50's Introduction to Artificial Intelligence with Python.
 
