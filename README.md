@@ -8,9 +8,9 @@ My assignments for CS50's Introduction to Artificial Intelligence with Python.
 =================
 
 <!--ts-->
-   * [EmojiArt](tree/master/EmojiArt)
-   * [Enroute](/tree/master/Enroute)
-   * [Memorize](/tree/master/Memorize)
+   * [EmojiArt](./EmojiArt)
+   * [Enroute](./Enroute)
+   * [Memorize](./Memorize)
 <!--te-->
 
 
