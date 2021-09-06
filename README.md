@@ -1,7 +1,7 @@
 # Stanford's CS193p 2020 Course - Developing iOS Apps
 
 My assignments for CS193p Course of Developing Apps for iOS of 2020. <br/>
-CS193p's Developing Apps for iOS of 2020 has allowed me to explore Model-View-View-Model (MVVM) design paradigms, object-oriented databases, networking, interactive performance considerations including multi-threading, data flow, gestures, animations and much more
+**Outcomes:** CS193p's Developing Apps for iOS of 2020 has allowed me to explore Model-View-View-Model (MVVM) design paradigms, object-oriented databases, networking, interactive performance considerations including multi-threading, data flow, gestures, animations and much more
 
 ![image](header.png)
 
